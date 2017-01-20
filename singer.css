@@ -1,0 +1,40 @@
+body {
+    background: url(bg1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#header1 {
+	font-size: 110px;
+	font-family: 'Monoton', cursive !important;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#author {
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	font-family: 'Arima Madurai', cursive;
+	font-family: 'Cousine', monospace;
+	position: absolute; bottom: -350px; right: 7px; text-align: right;
+	margin-top: 20px;
+	color: #fefef2;
+}
+
+#information {
+	height:300px;
+	display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#song {
+	height:300px;
+	display: block;
+    margin: auto;
+}
+
+#listen {
+	height:300px;
+	display: block;
+    margin: auto;
+}

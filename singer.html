@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Christina Novelli </title>
+
+	<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/6/60/Google-Fit-Icon.png">
+
+	<link rel="stylesheet" type="text/css" href="singer.css">
+	<script src="./soundCloudApi.js"></script>
+	<script type="text/javascript" src='singer.js'></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Rock+Salt" rel="stylesheet">
+
+</head>
+<body>
+	<div >
+		<h1 id="header1"> CHRISTINA NOVELLI </h1>
+		<p id="author"> Created by: Michelle Dai </p>
+
+	</div>
+
+
+	<div class="container">
+	 	<img src="information2.png" id="information" data-toggle="popover" title="Biography" data-content="Christina Novelli (born 27 November 1985) is a British DJ and vocalist who resides in London. She is the daughter of Jean-Christophe Novelli, a French celebrity chef. At the age of 17, influenced by the music of Motown, Johnny Cash, Elvis, Tina Turner, Lauryn Hill, Novelli started fronting her own bands. Novelli performed a mix of some of her own material along with many covers, making them her own. Some of the songs she sang were Goo Goo Dolls', ‘Iris’, Damien Rice’s ‘Cannonball’ and Bruno Mars’ ‘Just the way you are" >
+
+	 	<img src="songs2.png" id="song" data-container="body" data-toggle="popover" data-placement="left" title="Famous Songs"  data-content="Concrete Angel, Where We Began, Same Star, All Or Nothing...">
+
+	 	<a href="#" onclick="pauseMusic(event)">
+		 	<img src="listen2.png" id="listen" data-container="body" data-toggle="popover" data-placement="right" title="Click to Play/Pause" data-html="true" data-content="Song: Concrete Angel " />
+	 	</a>
+	</div>
+
+	
+
+	<script>
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').popover();   
+	});
+	</script>
+	
+	<iframe id="musicPlayer" width="100%" height="450" scrolling="no" frameborder="no" style="display:none" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/33991476&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	
+</body>
+</html> 
